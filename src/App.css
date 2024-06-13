@@ -1,0 +1,643 @@
+
+body, html {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: black;
+}
+::-webkit-scrollbar{
+  display: none;
+
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+@media (max-width: 769px) {
+ 
+}
+
+
+
+
+.navbar {
+  height: 7vh;
+  width: 100%;
+  background-color:slategray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure it stays above other content */
+  padding: 0 16px;
+}
+.logo {
+  padding-left: 12%;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item {
+  padding: 0 55px;
+  color: white; /* Adjust as needed */
+}
+
+
+.page1,.page2,.page3,.home{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: sticky;
+  top: 0;
+
+}
+.page5{
+  width: 100vw;
+  display: flex;
+  position: sticky;
+  top: 0;
+}
+
+.home{
+  background-image: url("https://www.dentaglo.com/images/slider-2.jpg" );
+  background-size: cover;
+  
+}
+.home .left{
+  flex: 1;
+  margin: 1% 6%;
+
+}
+.home .right{
+  flex: 1;
+}
+.home .textcontainer{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  left: 3%;
+}
+.home .textcontainer h2{
+  font-size: 50px;
+  font-weight: bold;
+}
+.home .textcontainer h3{
+  font-size: 30px;
+}
+
+.home button{
+  margin: 2px 20px;
+ 
+}
+.home .btn-consult{
+  height: 60px;
+  width: 160px;
+  border: solid 1px black;
+  border-radius: 6%;
+  cursor: pointer;
+  font-size: 20px;
+
+}
+.home .btn-contact{
+  height: 60px;
+  width: 100px;
+  border: solid 1px black;
+  border-radius: 6%;
+  cursor: pointer;
+  background-color: aqua;
+  font-size: 20px;
+
+
+}
+
+.page1{
+  background-image: url("src/assets/WhatsApp Image 2024-06-11 at 10.42.59.jpeg" );
+  background-size:cover;
+  
+}
+
+.page1 .left{
+  flex: 1;
+  margin: 1% 6%;
+
+}
+.page1 .right{
+  flex: 1;
+}
+.page1 .textcontainer{
+    margin-top:10 30;
+}
+.page1 .textcontainer h2{
+  font-size: 50px;
+  font-weight: bold;
+}
+.page1 .textcontainer h3{
+  font-size: 30px;
+}
+
+.page1 button{
+  margin: 2px 20px;
+ 
+}
+.page1 .btn-consult{
+  height: 60px;
+  width: 160px;
+  border: solid 1px black;
+  border-radius: 6%;
+  cursor: pointer;
+  font-size: 20px;
+
+}
+.page1 .btn-contact{
+  height: 60px;
+  width: 100px;
+  border: solid 1px black;
+  border-radius: 6%;
+  cursor: pointer;
+  background-color: aqua;
+  font-size: 20px;
+
+
+}
+
+
+.page2 video{
+  object-fit: cover;
+  height: 100vh;
+  width: 100vw;
+}
+.page2 .textcontainer{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  left: 3%;
+}
+
+
+
+.page2 .left h2{
+  color: rebeccapurple;
+  font-size: 60px;
+}
+.left button{
+  height:50px ;
+  width: 140px;
+  font-size: 20px;
+  text-wrap: wrap;
+  border-radius: 15px;
+  padding: 2px 4px;
+}
+
+.page3{
+  background-image: url("https://www.dentaglo.com/images/slider-2.jpg" );
+  background-size: cover;
+  
+}
+.page3.left{
+  flex: 1;
+  margin: 1% 6%;
+
+}
+.page3.right{
+  flex: 1;
+}
+
+.page3.textcontainer h2{
+  font-size: 50px;
+  font-weight: bold;
+}
+.page3 .textcontainer h3{
+  font-size: 30px;
+}
+
+.page3 button{
+  margin: 2px 20px;
+ 
+}
+.page3.btn-consult{
+  height: 60px;
+  width: 160px;
+  border: solid 1px black;
+  border-radius: 6%;
+  cursor: pointer;
+  font-size: 20px;
+
+}
+.page3 .btn-contact{
+  height: 60px;
+  width: 100px;
+  border: solid 1px black;
+  border-radius: 6%;
+  cursor: pointer;
+  background-color: aqua;
+  font-size: 20px;
+
+
+}
+
+.page5{
+  background-color: white;
+  flex-direction: column;
+}
+
+.page5 .container{
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  justify-content:start;
+  align-items:center;
+  gap: 30px;
+  padding-top: 10%;
+}
+ .container h1{
+  font-size: 60px;
+}
+.container p{
+  font-size: 20px;
+  
+}
+.card-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 4%;
+}
+
+.map-container{
+  width: 85vw;
+  height: 70vh;
+  margin-left: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 4%;
+  background-color: black;
+  border-radius: 20px;
+}
+
+.stats-container{
+  width: 85vw;
+  height: 70vh;
+  margin-left: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 4%;
+  background-color: yellowgreen;
+  border-radius: 20px;
+}
+.video-container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  margin-top: 4%;
+  background-color: black;
+  scroll-behavior: smooth;
+  
+}
+.videocards{
+  display: flex;
+  align-items: center;
+  justify-content:sp;
+  margin-top: 4%;
+  gap: 130px;
+}
+
+.faq-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 2%;
+  background-color:beige;
+}
+.faq-left{
+  flex:0.6;
+  margin: 20px 40px;
+  
+}
+
+.faq-left h1{
+  color: black;
+}
+.faq-right{
+  flex:1.4;
+}
+.faqstyle{
+  margin: 2% 5%;
+}
+.faq-container {
+  width: 100%;
+  margin: auto;
+  padding: 2rem;
+  ;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-container h1 {
+  text-align: center;
+}
+
+.faq-container p {
+  
+  margin-bottom: 2rem;
+  color: #6c757d;
+}
+
+.faq-items {
+  margin-top: 2rem;
+}
+
+.faq-item {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+
+  
+  padding: 1rem;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.faq-question h2 {
+  margin: 0;
+  color: black;
+  font-size: 1.25rem;
+}
+
+.faq-question .faq-toggle {
+  font-size: 1.5rem;
+  color: #0d6efd;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background-color: #fff;
+  padding: 0 1rem;
+  border-radius: 0 0 5px 5px;
+}
+
+.faq-answer p {
+  margin: 1rem 0;
+  color: #6c757d;
+  font-weight: bold;
+}
+
+.faq-answer.open {
+  max-height: 200px; /* Adjust this value based on the content length */
+}
+
+.faq-question h2.active {
+  color: #0d6efd;
+}
+.footer{
+  background-color: #2d2d32;
+
+}
+.section_padding{
+  padding: 4rem 4rem;
+}
+
+.sb_footer{
+  display: flex;
+  flex-direction: column;
+}
+.sb_footer-links{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.sb_footer-links_div{
+  width: 150px;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: white;
+}
+ a{
+  color: rgba(175,175,179);
+  text-decoration: none;
+ }
+ .socialmedia{
+  display: flex;
+  flex-direction: row;
+ }
+
+ .sb_footer-links_div h4{
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 0.9rem;
+ }
+
+ .sb_footer-links_div p{
+  font-size: 12px;
+  line-height: 15px;
+  margin: 0.5rem 0;
+  cursor: pointer;
+ }
+
+ .sb_footer-below{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 0.2rem;
+ }
+
+ .sb_footer-below-links{
+  display: flex;
+  flex-direction: row;
+ }
+
+ .sb_footer-below-links p{
+  font-size: 13px;
+  line-height: 15px;
+  margin-left: 2rem;
+  color: white;
+  font-weight: 600;
+ }
+
+hr{
+  color: white !important;
+  width: 100%;
+}
+.sb_footer-copyright p{
+  font-size: 13px;
+  line-height: 15px;
+  color: wheat;
+  font-weight: 600;
+}
+
+@media screen and(max-width:850px) {
+   .sb_footer-heading h1{
+    font-size: 44px;
+    line-height: 50px;
+   }
+
+}
+
+@media screen and(max-width:550px) {
+  .sb_footer-heading h1{
+   font-size: 34px;
+   line-height: 42px;
+  }
+  .sb_footer-links div{
+    margin: 1rem 0;
+  }
+  .sb_footer-btn p{
+   font-size: 14px;
+   line-height: 20px;
+  }
+  .sb_footer-below{
+    flex-direction: column;
+    justify-content: left;
+  }
+
+  .sb_footer-below-links{
+    flex-direction: column;
+  }
+  .sb_footer-below-links p{
+    margin-top: 1rem;
+    margin-left: 0rem;
+  }
+
+
+
+  
+}
+
+@media screen and(max-width:400px){
+  .sb_footer-heading h1{
+    font-size: 27px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 920px) {
+  .navbar{
+    height: 10vh;
+    background-color:hsla(0,0%,97%,1);
+  }
+  .item {
+    padding: 0 55px;
+    color: royalblue; /* Adjust as needed */
+  }
+  .page1{
+    display: inline-block;
+    background-image: url("src/assets/WhatsApp Image 2024-06-11 at 10.35.07.jpeg" );
+    background-size: cover;
+    
+  }
+  .page1 .left{
+    display: inline;
+  
+  }
+  .page1 button{
+    margin: 0px 50px;
+   
+  }
+  .page1 .btn-consult{
+    height: 60px;
+    width: 250px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    padding: 0px 8px;
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.12);
+border-radius: 16px;
+/* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+backdrop-filter: blur(80px);
+-webkit-backdrop-filter: blur(9.1px);
+border: 1px rgba(255, 255, 255, 0.3);
+
+  }
+    .page1 .textcontainer h2{
+      font-size: 43px;
+      font-weight: 620;
+      letter-spacing: 1px;
+      color:white;
+      margin-left: 50px;
+    }
+    .page1 .textcontainer p{
+      font-size: 30px;
+      color:white;
+      margin-top: 2.5%;
+      margin-left: 50px;
+      font-weight: 500;
+      width: fit-content;
+      padding: 2px 10px;
+      font-weight: 400;
+      color: blue;
+      
+
+    }
+    .page2 .textcontainer{
+      display: inline-block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      left: 3%;
+    }
+  .page3{
+    display: block;
+  }
+  .home{
+    display: block;
+  }
+  .logo {
+    padding-left: 8%;
+    font-size: 25px;
+    font-weight: bold;
+    color:royalblue;
+  }
+  .card-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 4%;
+    gap: 30px;
+  }
+
+}
+
+

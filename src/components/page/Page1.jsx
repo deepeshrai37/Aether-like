@@ -27,9 +27,6 @@ export const Page1 = () => {
        <div className="left">
         <div className="textcontainer">
         <h2>Dental Clinic At Home</h2>
-        <p>
-          The New Era Of Dental Care
-        </p>
         <div className="buttons">
         <button className="btn-consult">
           Book Free Consultation

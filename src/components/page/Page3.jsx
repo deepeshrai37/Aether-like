@@ -1,9 +1,9 @@
 import { useEffect } from "react";
-//import { useGSAP } from "@gsap/react"
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
-export const Page3 = () => {
+export const Page3= () => {
+  
   useEffect(() => {
     gsap.to('.page3', {
       scrollTrigger: {
@@ -20,22 +20,19 @@ export const Page3 = () => {
   }, []);
   return (
     <div className="page3">
-       <div className="left">
-        <div className="textcontainer">
-        <h2>Lorem, ipsum dolor.</h2>
-        <h3>Lorem ipsum dolor sit amet.</h3>
-        <div className="buttons">
-        <button className="btn-consult">
-          Book Free Consultation
-        </button>
-        <button className="btn-contact">Contact Us</button>
-        </div>
-        </div>
-       </div>
-       <div className="right">
-       
-        
-       </div>
+     <video src="src\assets\skin.MP4" muted autoPlay loop onBlur="20" ></video>
+     <div className="textcontainer">
+      <div className="left">
+      <h2>
+        Skin Treatment At Home
+      </h2>
+      <button>
+        Book Free Consultation
+      </button>
+      </div>
+      <div className="right"></div>
+      
+     </div>
     </div>
   )
 }

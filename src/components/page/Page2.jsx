@@ -25,10 +25,10 @@ export const Page2= () => {
      <div className="textcontainer">
       <div className="left">
       <h2>
-        Lorem ipsum dolor sit.
+        Hair Treatment At Home
       </h2>
       <button>
-        Click to Know More
+        Book Free Consultation
       </button>
       </div>
       <div className="right"></div>

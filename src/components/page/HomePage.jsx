@@ -22,8 +22,8 @@ export const HomePage= () => {
     <div className="home">
        <div className="left">
      <div className="textcontainer">
-     <h2>Lorem, ipsum dolor.</h2>
-     <h3>Lorem ipsum dolor sit amet.</h3>
+     <h2>Cant go to clinic?</h2>
+     <h3>We come at ur doorstep</h3>
      <div className="buttons">
      <button className="btn-consult">
        Book Free Consultation
